@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-Backend
+    env: node
+    buildCommand: npm install
+    startCommand: nodemon index.js
+    plan: free
+    envVars:
+      - key: PORT
+        value: 3000
