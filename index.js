@@ -18,7 +18,8 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL, // Allow frontend access
+    origin:
+      "https://frontend-react-9m76rc98b-saicharan2014s-projects.vercel.app", // Allow frontend access
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
